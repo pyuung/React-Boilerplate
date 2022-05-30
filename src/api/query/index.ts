@@ -7,5 +7,8 @@ export const defaultBaseQuery = fetchBaseQuery({
   headers: {
     'Content-Type': 'application/json',
   },
+  prepareHeaders: (headers, { endpoint }) => {
+    return headers
+  },
   credentials: 'omit',
 })
